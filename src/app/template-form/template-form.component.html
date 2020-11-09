@@ -1,0 +1,34 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+  <div class="form-group">
+    <label for="cep">CEP</label>
+    <input type="number" class="form-control" id="cep" placeholder="Cep" [(ngModel)]="cep" (blur)="pegarCep($event.target.value)" [ngModelOptions]="{standalone: true}">
+  </div>
+
+  <div class="form-group">
+    <label for="logradouro">Logradouro</label>
+    <input type="text" class="form-control" id="logradouro" placeholder="Logradouro" value="{{logradouro}}">
+  </div>
+
+  <div class="form-group">
+    <label for="bairro">Bairro</label>
+    <input type="text" class="form-control" id="bairro" placeholder="Bairro" value="{{bairro}}">
+  </div>
+
+  <div class="form-group">
+    <label for="cidade">Cidade</label>
+    <input type="text" class="form-control" id="cidade" placeholder="Cidade" value="{{cidade}}">
+  </div>
+
+  <div class="form-group">
+    <label for="estado">Estado</label>
+    <input type="text" class="form-control" id="estado" placeholder="Estado" value="{{estado}}">
+  </div>
+</form>
+
+
+
+
+<button type="submit" class="btn btn-primary">Submit</button>
+
+
