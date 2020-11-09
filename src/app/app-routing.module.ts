@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: 'templateForm', component: TemplateFormComponent },
-  // { path: '', pathMatch: 'full', redirectTo: 'templateForm' }
 ];
 
 @NgModule({

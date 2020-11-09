@@ -16,11 +16,6 @@ export class TemplateFormComponent implements OnInit {
   bairro: string;
   cidade: string;
   estado: string;
-  erro: any;
-
-  onSubmit(f: any): void {
-    console.log(f);
-  }
 
   constructor(
     private cepService: CepService
@@ -35,7 +30,6 @@ export class TemplateFormComponent implements OnInit {
         this.bairro = data.bairro;
         this.cidade = data.localidade;
         this.estado = data.uf;
-        console.log(data);
       });
     }
 }
